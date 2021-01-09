@@ -24,7 +24,7 @@ public class Bee : MonoBehaviour
 
     public Bee() {
         atHive = new AtHive(this);
-        searching = new Searching(this, this.flowers);
+        searching = new Searching(this);
         gathering = new Gathering(this);
         dancing = new Dancing(this);
         _state = atHive;

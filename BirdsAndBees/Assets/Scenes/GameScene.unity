@@ -136,11 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 341427440}
     - target: {fileID: 4293270038676715062, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_Name
-      value: Bird
+      value: Bird 1
       objectReference: {fileID: 0}
     - target: {fileID: 4293270038676715064, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.88
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: 4293270038676715064, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_LocalPosition.y
@@ -684,7 +684,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7839579098063098248, guid: c9cda8ddadec23249b5d97418d8103e6, type: 3}
       propertyPath: m_Name
-      value: Nest (1)
+      value: Nest 2
       objectReference: {fileID: 0}
     - target: {fileID: 8191804724115219056, guid: c9cda8ddadec23249b5d97418d8103e6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1613,11 +1613,11 @@ PrefabInstance:
       objectReference: {fileID: 1714903675}
     - target: {fileID: 4293270038676715062, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_Name
-      value: Bird (1)
+      value: Bird 2
       objectReference: {fileID: 0}
     - target: {fileID: 4293270038676715064, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.74
+      value: -8.9
       objectReference: {fileID: 0}
     - target: {fileID: 4293270038676715064, guid: 98d20482754cd3240b43c0c5676b7a44, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2057,7 +2057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7839579098063098248, guid: c9cda8ddadec23249b5d97418d8103e6, type: 3}
       propertyPath: m_Name
-      value: Nest
+      value: Nest 1
       objectReference: {fileID: 0}
     - target: {fileID: 8191804724115219056, guid: c9cda8ddadec23249b5d97418d8103e6, type: 3}
       propertyPath: m_LocalPosition.x

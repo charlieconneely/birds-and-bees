@@ -9,7 +9,6 @@ public class Gathering : BeeState
 {
     private float nectarGathered = 0f;
     private float maxNectar = 10f;
-    private float totalNectar = 0f;
     private float totalNectarGathered = 0f;
     private float limitPerFlower = 2f;
     private Color color = Color.blue;
@@ -24,7 +23,7 @@ public class Gathering : BeeState
         Gather();
     }
 
-    public void Gather()
+    private void Gather()
     {
         bee.GetComponent<SpriteRenderer>().color = color; 
         nectarGathered += 1f * Time.deltaTime;

@@ -18,10 +18,9 @@ public class Searching : BeeState
     private float energy;
     private float energyLoss = 0.1f;
 
-    public Searching(Bee bee, List<GameObject> flowers) 
+    public Searching(Bee bee) 
     {
         this.bee = bee;
-        this.flowers = flowers;
     }
 
     public override void Act()

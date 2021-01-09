@@ -49,7 +49,6 @@ public class Resting : BirdState
             energy += energyIncrease * Time.deltaTime;
             bird.setEnergy(energy);
         }
-        Debug.Log(energy);
         if (energy >= 10) {
             atNest = false;
             bird.setState(bird.getFlyingState());

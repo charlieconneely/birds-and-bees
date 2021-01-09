@@ -14,11 +14,13 @@ public class Bird : MonoBehaviour
 
     BirdState flying;
     BirdState resting;
+    BirdState chasing;
     BirdState _state;
 
     public Bird() {
         flying = new Flying(this);
         resting = new Resting(this);
+        chasing = new Chasing(this);
          _state = resting;
     }
 
@@ -32,6 +34,11 @@ public class Bird : MonoBehaviour
         _state.Act();    
     }
 
+    private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("Collided");
+        this.setState(chasing);
+    }
+
     public BirdState getFlyingState() {return flying;}
     public BirdState getRestingState() {return resting;}
 
@@ -39,5 +46,5 @@ public class Bird : MonoBehaviour
     public float getSpeed() {return speed;}
     public GameObject getNest() {return nest;}
 
-    public void setEnergy(float e) {energy = e;}
+    public void setEnergy(float e) {energy = e;}  
 }
