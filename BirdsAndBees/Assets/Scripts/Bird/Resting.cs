@@ -11,7 +11,7 @@ public class Resting : BirdState
     private float energy;
     private float speed;
     private float energyIncrease = 0.3f;
-    private bool atNest = true;
+    private bool atNest = false;
     private Color restingColor = Color.magenta;
 
     public Resting(Bird bird) 

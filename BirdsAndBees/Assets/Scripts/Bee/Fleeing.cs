@@ -1,12 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /* 
 * Fleeing state
 */
 public class Fleeing : BeeState
 {
+    private GameObject hive;
+    private ChaseController chaseController;
+    private float speed;
+    private Color color = Color.grey;
+
     public Fleeing(Bee bee)
     {
         this.bee = bee;
@@ -17,8 +20,19 @@ public class Fleeing : BeeState
         Flee();
     }
 
-    public void Flee()
+    private void Flee()
     {
-        Debug.Log("Fleeing");
+        bee.GetComponent<SpriteRenderer>().color = color; 
+        hive = bee.getHive();
+        speed = bee.getSpeed();
+
+        float step = speed * Time.deltaTime;
+        bee.transform.position = Vector2.MoveTowards(bee.transform.position, hive.transform.position, step);
+
+        if (bee.transform.position.x == hive.transform.position.x 
+            && bee.transform.position.y == hive.transform.position.y)
+        {
+            bee.setState(bee.getDancingState());
+        }
     }
 }

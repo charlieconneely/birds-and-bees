@@ -16,7 +16,7 @@ public class AtHive : BeeState
         StartSearching();
     }    
 
-    public void StartSearching()
+    private void StartSearching()
     {
         bee.setState(bee.getSearchingState());
     }

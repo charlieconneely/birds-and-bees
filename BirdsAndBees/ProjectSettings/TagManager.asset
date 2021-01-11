@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Border
   - Bee
+  - Bird
   layers:
   - Default
   - TransparentFX

@@ -51,13 +51,16 @@ public class Searching : BeeState
     private void checkEnergy()
     {
         energy = bee.getEnergy();
-        if (energy > 2) {
+        if (energy > 2f) {
             bee.GetComponent<SpriteRenderer>().color = fitColor; 
-        } else if (energy > 1) {
+        } else if (energy > 1f) {
             bee.GetComponent<SpriteRenderer>().color = tiredColor; 
         } else {
             bee.GetComponent<SpriteRenderer>().color = tooTiredColor; 
         }
+
+        /* if the energy is too low - get back to the hive */
+        if (energy < 0.5f) bee.setState(bee.getDancingState());
 
         energy -= energyLoss * Time.deltaTime;
         bee.setEnergy(energy);
