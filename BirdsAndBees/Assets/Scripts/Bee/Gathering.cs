@@ -28,10 +28,7 @@ public class Gathering : BeeState
         bee.GetComponent<SpriteRenderer>().color = color; 
         nectarGathered += 1f * Time.deltaTime;
 
-        //bee.checkNectar(nectarGathered);
-
         if (nectarGathered >= limitPerFlower) {
-            //bee.checkNectar(nectarGathered);
             totalNectarGathered += nectarGathered;
             if (totalNectarGathered >= maxNectar) {
                 nectarGathered = 0f;

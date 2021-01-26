@@ -44,16 +44,7 @@ public class Bee : MonoBehaviour
         _state = state;
     }
 
-    // check if amount has reached limit
-    public void checkNectar(float amt) {
-        nectar += amt;
-        Debug.Log(nectar);
-        if (nectar >= maxNectar) {
-            setState(dancing);
-        }
-    }
-
-    public void checkIfAtHive()
+    private void checkIfAtHive()
     {
         if (transform.position.x == hive.transform.position.x
             && transform.position.y == hive.transform.position.y)

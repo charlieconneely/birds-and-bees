@@ -28,7 +28,7 @@ public class Searching : BeeState
         Search();
     }
 
-    public void Search() 
+    private void Search() 
     {
         checkEnergy();
         flowers = bee.getFlowers();        
